@@ -4,6 +4,10 @@
   background-color: #2D2D2D;
 }
 
+a{
+  text-decoration: none; 
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -18,14 +22,6 @@ html {
   display: block;
   margin-left: 0px;
   margin-right: 0px;
-}
-
-.wrapper {/*обертка */
-  max-width: 32rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .logo{
@@ -52,10 +48,7 @@ html {
   background-color: #2D2D2D;
   border: none;
 }
-.buttons2{
-  display: none;
-  
-}
+
 .line1 {
   margin-top: 16px;
   border-top: 1px solid #575555;
@@ -72,7 +65,7 @@ html {
   font-style: normal;
   font-weight: 900;
   line-height: 141.5%; /* 42.45px */
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .section-discription{
@@ -88,19 +81,14 @@ html {
   display: block;
   max-width: 20rem;
   max-height: 30rem;
-  grid-column: span 3;
-  justify-self: center;
+  margin: auto;
+  transform: rotate(45deg);
 }
 
-.img2{
-  
-}
-
-.img3{
-  grid-column: span 1;
-}
 .list{
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.7rem;
 }
 .item{
   display: flex;
@@ -116,9 +104,28 @@ html {
   font-weight: 400;
   line-height: 140.5%;/* 22.48px */
 }
-
-@media (max-width: 360px) {
+@media (min-width: 320px) and (max-width:960px) {
+  .wrapper {/*обертка */
+    max-width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
   .buttons2{
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  .wrapper{
+    max-width: 161rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24.5rem;
+    padding-right: 24.5rem;
+  }
+  .menu{
     display: none;
   }
 }
