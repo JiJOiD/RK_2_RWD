@@ -1,0 +1,124 @@
+:root {
+  font-family: Rubik;
+  --text-color: #FFFFFF;
+  background-color: #2D2D2D;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.block0{
+  display: block;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.wrapper {/*обертка */
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.logo{
+  display: flex;
+  align-items: start;
+  justify-self: start;
+}
+.header{
+  
+}
+.flex{
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-content: center;
+  padding: 0.8rem 0rem 1.6rem 0rem;
+}
+.header-logo{
+  background-color: #2D2D2D;
+  border: 0px;
+}
+.menu{
+  justify-content: end;
+  background-color: #2D2D2D;
+  border: none;
+}
+.buttons2{
+  display: none;
+  
+}
+.line1 {
+  margin-top: 16px;
+  border-top: 1px solid #575555;
+}
+
+/**/
+.section{
+  
+}
+
+.section-h1{
+  color: #FFF;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 141.5%; /* 42.45px */
+  max-width: 100%;
+}
+
+.section-discription{
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+  max-width: 28.8rem;
+}
+
+.fuelwheel{
+  display: block;
+  max-width: 20rem;
+  max-height: 30rem;
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.img2{
+  
+}
+
+.img3{
+  grid-column: span 1;
+}
+.list{
+
+}
+.item{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+}
+.item-text{
+  color: #FFF;
+  font-family: Rubik;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.5%;/* 22.48px */
+}
+
+@media (max-width: 360px) {
+  .buttons2{
+    display: none;
+  }
+}
