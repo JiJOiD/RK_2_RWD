@@ -41,7 +41,7 @@ html {
 }
 .header-logo{
   background-color: #2D2D2D;
-  border: 0px;
+  border: none;
 }
 .menu{
   justify-content: end;
@@ -50,8 +50,8 @@ html {
 }
 
 .line1 {
-  margin-top: 16px;
-  border-top: 1px solid #575555;
+  margin-top: 1.6rem;
+  border-top: .1rem solid #575555;
 }
 
 /**/
@@ -67,10 +67,21 @@ html {
   line-height: 141.5%; /* 42.45px */
   /* max-width: 100%; */
 }
-
+.buttons2{
+  display: flex;
+  gap: 3.6rem;
+}
+.buttonsin{
+  color: #FFF;
+  font-family: Rubik;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
 .section-discription{
   color: #FFF;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 19.2px */
@@ -113,7 +124,7 @@ html {
     padding-right: 2rem;
   }
   
-  .buttons2{
+  .buttons2,.big{
     display: none;
   }
 }
@@ -125,7 +136,27 @@ html {
     padding-left: 24.5rem;
     padding-right: 24.5rem;
   }
-  .menu{
+  .menu,.small{
     display: none;
+  }
+  .big{
+    display: flex;
+    flex-direction: row;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .list{
+    flex-wrap: nowrap;
+  }
+  .im{
+    max-width: 11.4rem;
+    max-height: 11.4rem;
+  }
+  .fuelwheel{
+    width: 46.7323rem;
+    height: 70.6615rem;
   }
 }
